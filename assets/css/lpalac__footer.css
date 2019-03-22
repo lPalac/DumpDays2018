@@ -1,0 +1,235 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Sans Pro';
+}
+.order1{
+    order:1;
+    }
+.order2{
+    order:2;
+    }
+.order3{
+    order:4;
+    }
+.padding40{
+    padding: 40px;
+}
+.main{
+
+ position: relative;
+}
+.footer{
+    padding: 20px 40px;
+}
+
+.footer h4{
+    font-weight: 50;
+    font-size: 11px;
+    margin-top: 15px;
+}
+nav{
+    padding: 0 40px;
+}
+
+nav img{
+    width: 40px;
+    margin-right: 20px;
+}
+.pridruzi{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.pridruzi h2{
+   color: #30cec2;
+   font-size: 32px;
+   font-weight: bold;
+   max-width: 200px;
+   z-index: 2;
+   
+}
+.pridruzi__kontaktiraj{
+    display: flex;
+    flex-direction: column;
+}
+.pridruzi__kontaktiraj a{
+    margin: 15px 0 25px 0;
+ 
+}
+.pridruzi__registriraj {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 15px 30px rgba(50,50,93,.2), 0 1px 3px rgba(0,0,0,.1);
+ background-color: #1a3b43;
+    background-image: url("../Images/34744053275_072acb31db_o.png");
+    background-size:1000px;
+
+    position: relative;
+    z-index: 1;
+    max-width: 100%;
+
+}
+.pridruzi__registriraj--vrlik{
+ max-width: 100%;
+}
+.pridruzi__registriraj--vrlik img{
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    right: 0px;
+    height: 110%;
+    /*background-image: url("../Images/vr-guy.png") ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    VATIT SE NA OVO!!!!
+    */
+}
+
+.pridruzi__registriraj a{
+    margin: 15px 0 25px 0;
+    color: white;
+    z-index: 2;
+}
+.button__pridruzi{
+    width: 150px; 
+    
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: #30cec2;
+    z-index: 2; 
+    transition: all .2s ease-in-out;
+    padding: 5px 15px;
+    border-radius: 6px;
+    border:none;
+    
+}
+.newsletter{
+    text-align: center;
+}
+.newsletter h2{
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 900;
+   
+    color: #1a3b43;
+    
+}
+
+.newsletter__tekst{
+    padding: 20px 0;
+}
+.newsletter__content{
+    max-width: 100%;
+    display: flex;
+}
+.newsletter__input{
+    background-color: #f2f2f2;
+    flex: auto;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 20px;
+    font-size: 16px;
+    flex: auto;
+    
+}
+.newsletter__button{
+    color: white;
+    background: #1a3b43;
+    border-radius: 4px;
+    border: 0;
+    padding: 10px 14px;
+    width: 120px;
+    font-weight: 900;
+
+}
+.sponzori{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.sponzori__broncani img{
+
+width: 170px;
+}
+.sponzori__broncani h2{
+    color: #30cec2;
+    margin-top: 60px;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 900;
+
+}
+.sponzori__srebrni img{
+    width: 240px;
+}
+.sponzori__srebrni h2{
+    text-transform: uppercase;
+    font-size: 42px;
+    color: #30cec2;
+    margin-top: 60px;
+    font-weight: 900;
+}
+.sponzori__zlatni--logo{
+    width: 200px;
+}
+.sponzori__zlatni--img{
+    width: 295px;
+    
+}
+/*.sponzori__zlatni--img {
+    width: 100%;
+    background-image: url("../Images/sponzori/en.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-bottom: 40%;
+    background-size: 100%;
+}*/
+.sponzori__zlatni h2{
+    color: #30cec2;
+    margin-top: 60px;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 900;
+}
+.sponzori__generalni--img{
+    width: 295px;
+}
+.sponzori__generalni h2{
+    text-transform: uppercase;
+    font-size: 42px;
+    color: #1a3b43;
+    font-weight: bold;
+}
+.sponzori__generalni--logo{
+    width: 250px;
+}
+/*.bg-face {
+    width: 40px; 
+    height: 40px;
+    background: url("../css_sprites\ \(1\).png") -5560px -1242px ;   
+}
+.bg-yt {
+    width: 96px; height: 98px;
+    background: url("../css_sprites\ \(1\).png") -5560px -1478px;
+}
+.bg-insta {
+    width: 98px; height: 98px;
+    background: url("../css_sprites\ \(1\).png") -5560px -1360px;
+}*/
+
+
+
+@media screen and (max-width: 800px){
+
+}
