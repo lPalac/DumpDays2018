@@ -12,9 +12,10 @@
     -moz-box-sizing:border-box; 
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    
-  max-width: 100%;
+    max-width: 100%;
+
 }
+
 .order1{
     order:1;
     }
@@ -553,9 +554,7 @@ align-content: center;
         height:  372px;
         
     }
-    .galerija__slike img{
-        
-    }
+    
     .galerija__iznad--logo{
         height: 650px;
         margin-left: -60px;
