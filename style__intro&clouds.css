@@ -67,9 +67,11 @@
     margin-top: 150px;
     margin-bottom: 150px;
 }
+.prizes__photo{
+    float: right;
+}
 .prizes__photo--img{
-    width: 95%;
-    /*float: right;*/
+    width: 100%;
     max-width: 480px;
     margin-right: -20%;
     padding-bottom: 50px;
