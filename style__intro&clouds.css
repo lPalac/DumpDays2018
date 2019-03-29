@@ -67,9 +67,11 @@
     margin-top: 150px;
     margin-bottom: 150px;
 }
+.prizes__photo{
+    float: right;
+}
 .prizes__photo--img{
-    width: 95%;
-    /*float: right;*/
+    width: 100%;
     max-width: 480px;
     margin-right: -20%;
     padding-bottom: 50px;
@@ -198,12 +200,6 @@
     .discussion__photo--img{
         margin-top: 0;
     }  
-    .discussion__content{
-
-    }
-    .discussion__content--text{
-
-    }
     .top{
         clip-path: polygon(0 0, 0% 100%, 50% 0);
         height: 300px;
@@ -213,13 +209,6 @@
         position: relative;
         z-index: 2;
     }
-    /*
-    .top__inside{
-        clip-path: polygon(50% 0%, 0% 100%, 60% 100%);
-        height: 300px;
-        background-color: black;
-        z-index: -2;
-    }*/
 }
 
 @media screen and (min-width: 1024px){
@@ -335,5 +324,4 @@
     .intro--information{
         font-size: 28px;
     }
-    
 }
