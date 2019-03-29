@@ -4,11 +4,16 @@
     font-weight: 400;
     src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
+}
 *{
     padding: 0;
     margin: 0;
     font-family: 'Source Sans Pro';
+    -moz-box-sizing:border-box; 
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    
+  max-width: 100%;
 }
 .order1{
     order:1;
@@ -22,12 +27,27 @@
 .padding40{
     padding: 40px;
 }
-.main{
 
- position: relative;
+.sponzori__tekst{
+    text-align: left;
+    line-height: 1.8;
+    font-size: 14px;
+}
+.main{
+position: relative;
+}
+
+.container{
+   
+   
+    max-width: 938px;
+    margin: 0 auto;
 }
 .footer{
     padding: 20px 40px;
+    display: flex;
+    flex-direction: column-reverse;
+   
 }
 
 .footer h4{
@@ -35,6 +55,7 @@
     font-size: 11px;
     margin-top: 15px;
 }
+
 nav{
     padding: 0 40px;
 }
@@ -76,10 +97,16 @@ nav img{
     position: relative;
     z-index: 1;
     max-width: 100%;
+    
 
 }
 .pridruzi__registriraj--vrlik{
  max-width: 100%;
+   /*background-image: url("../Images/vr-guy.png") ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    VATIT SE NA OVO!!!!
+    */
 }
 .pridruzi__registriraj--vrlik img{
     position: absolute;
@@ -87,11 +114,8 @@ nav img{
     bottom: 0;
     right: 0px;
     height: 110%;
-    /*background-image: url("../Images/vr-guy.png") ;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    VATIT SE NA OVO!!!!
-    */
+
+  
 }
 
 .pridruzi__registriraj a{
@@ -115,12 +139,15 @@ nav img{
 }
 .newsletter{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
 }
 .newsletter h2{
     font-size: 32px;
     text-transform: uppercase;
-    font-weight: 900;
-   
+    font-weight: 900;  
     color: #1a3b43;
     
 }
@@ -133,29 +160,31 @@ nav img{
     display: flex;
 }
 .newsletter__input{
-    background-color: #f2f2f2;
-    flex: auto;
+    background-color: #f2f2f2; 
     border: none;
     border-radius: 4px;
-    padding: 12px 20px;
-    font-size: 16px;
-    flex: auto;
-    
+    padding: 12px 10px;
+    font-size: 16px; 
+    justify-content: center;
 }
 .newsletter__button{
     color: white;
     background: #1a3b43;
     border-radius: 4px;
     border: 0;
-    padding: 10px 14px;
-    width: 120px;
+    padding: 10px 10px;
+    width: 100px;
     font-weight: 900;
 
+
+}
+.newsletter__wrapper{
+    display: flex;
+    
+    margin: 0 auto;
 }
 .sponzori{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+  
     text-align: center;
 }
 .sponzori__broncani img{
@@ -170,6 +199,11 @@ width: 170px;
     font-weight: 900;
 
 }
+.sponzori__broncani,  .sponzori__srebrni{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .sponzori__srebrni img{
     width: 240px;
 }
@@ -184,28 +218,46 @@ width: 170px;
     width: 200px;
 }
 .sponzori__zlatni--img{
-    width: 295px;
     
-}
-/*.sponzori__zlatni--img {
-    width: 100%;
-    background-image: url("../Images/sponzori/en.jpg");
+    max-width: 400px;
+    height: 100%;
+    border-radius: 6px;
+    position: relative ; 
+    padding-top: 40%;
+    margin: 0 auto;
+  
     background-position: center center;
-    background-repeat: no-repeat;
-    padding-bottom: 40%;
-    background-size: 100%;
-}*/
-.sponzori__zlatni h2{
+    background-size: cover;
+    margin-bottom: 15px;
+}
+.sponzori__zlatni--en{
+    background-image:url('../Images/sponzori/en.jpg');
+}
+.sponzori__zlatni--net{
+    background-image:url('../Images/sponzori/seek.jpg');
+}
+.sponzori__zlatni--seek{
+    background-image:url('../Images/sponzori/net.jpg');
+}
+
+
+.sponzori__zlatni--h2{
     color: #30cec2;
     margin-top: 60px;
     text-transform: uppercase;
     font-size: 32px;
     font-weight: 900;
 }
-.sponzori__generalni--img{
-    width: 295px;
+.sponzori__generalni{
+    max-width: 1120px;
+    margin: 0 auto;
 }
-.sponzori__generalni h2{
+.sponzori__generalni--img{
+    max-width: 100%;
+    border-radius: 6px;
+    padding-bottom: 20px;
+}
+.sponzori__generalni--h2{
     text-transform: uppercase;
     font-size: 42px;
     color: #1a3b43;
@@ -213,6 +265,12 @@ width: 170px;
 }
 .sponzori__generalni--logo{
     width: 250px;
+}
+.sponzori__generalni::after{
+    content: "";
+    clear: both;
+    display: block;
+    
 }
 /*.bg-face {
     width: 40px; 
@@ -227,9 +285,376 @@ width: 170px;
     width: 98px; height: 98px;
     background: url("../css_sprites\ \(1\).png") -5560px -1360px;
 }*/
+.sponzori__naslov{
+    width:70%; 
+    padding-bottom: 30px;
+ 
+}
 
+.sponzori__naslov img{
+    width:100%; 
+    margin-left: -50px;
+}
+.galerija{
+    display: none;
+}
+.statistike{
+    display: none;
+}
+.raspored{
+    border-top: #30cec2 10px solid ;
+    box-shadow: inset 0 69px 164px -127px rgba(48,206,193,.7);
 
+}
+.raspored__naslov {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.raspored__naslov h1 {
+    font-weight: bold;
+    color: #1a3b43;
+    font-size:36px;
+    padding-bottom: 20px;
+    
+}
+.raspored__naslov span{
+    font-weight: bold;
+}
+.raspored__toggle{
+    display:flex;
+    justify-content: center;
+}
+.raspored__toggle--naslov{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.raspored__toggle--podnaslov{
+    font-size: 14px;
+   
+    font-weight: 400;
+}
+.raspored__toggle--bojaon{
+color: white;
+background-color: #30cec2;
+border-top-left-radius: 6px; 
+    border-bottom-left-radius: 6px;
+}
+.raspored__toggle--bojaoff{
+    color: #30cec2;
+    background-color: white;
+    border-top-right-radius: 6px; 
+    border-bottom-right-radius: 6px;
+    
+  
+}
+.raspored__botuni{
+    padding: 14px 40px;
+    border-color: #30cec2;
+    border:1px solid;
+  
+}
+.raspored__termini{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 40px 0 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.raspored__termin{
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    position: relative;
+    padding: 12px;
+    padding-top: 20px;
+    
+    
+}
+.raspored__termin--pojedinacno{
+display: flex;
+align-content: center;
 
-@media screen and (max-width: 800px){
+}
+.raspored__termin--pojedinacno--vrijeme{
+   
+    padding-bottom: 10px;
+    font-weight: 900;
+    font-size: 18px;
+  
+ 
+}
+.raspored__termin--pojedinacno--tekst{
+    margin-bottom: 5px;
+  
+}
+.raspored__termin--pojedinacno--tekst h1{
+    color: #193b44;
+    font-weight: 900;
+    font-size: 22px;
 
+}
+.raspored__termin--pojedinacno--tekst a{
+    color: #262626;
+    font-weight: 500;
+}
+.raspored__termin--dev, .raspored__termin--design, .raspored__termin--tech{
+    
+    color: white;
+    text-transform: uppercase;
+    padding:3.25px 7px;
+    margin-left: 20px;
+    font-size: 12px;
+}
+.raspored__termin--dev {
+    background-color: #a2d29f;
+}
+.raspored__termin--tech {
+    background-color: #203c44;
+}
+.raspored__termin--design {
+    background-color: #e25e5f;
+}
+.raspored__termin--logo{
+ display: none;
+}
+.raspored__radionice--naslov{  
+      font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    
+    color: #30cec2;
+
+}
+@media screen and (min-width: 768px){
+    .paddingLR20--30{/*LEFT RIGHT*/
+        padding: 0 20px;
+    }
+    .footer{
+    
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        
+    }
+
+    .footer__nav{
+        font-size: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-content: center;
+    }
+    .footer h4{
+     font-size: 14px;
+    }
+    .footer__copyright{
+        font-size: 14px;
+    }
+
+    .pridruzi{
+      
+        flex-direction: row;
+    }
+    .pridruzi__registriraj {
+        width: 50%;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+    }
+    .pridruzi__kontaktiraj{
+        display: flex;
+        width: 50%;
+        justify-content: flex-end;
+        position: relative;
+    }
+    .pridruzi__kontaktiraj--content{
+        max-width: 350px;
+        width: 100%;
+        z-index: 1;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        right: 0px;
+    }
+    .newsletter__wrapper{
+      
+    }
+    .newsletter__button{
+        font-size: 20px;
+        font-weight: bold;
+        width: 130px;
+    }
+    .newsletter__input{
+        padding: 12px 20px;
+        width: 400px;
+    }
+    .sponzori__zlatni{
+        max-width: 1120px;
+        margin: 0 auto;
+    }
+    .sponzori__zlatni--img{
+        padding-top: 70%;
+        width: 100%;
+        height:initial;
+    }
+    .sponzori__zlatni--float{
+        float: left;
+        width: 33%;
+    }
+    .sponzori__zlatni::after{
+        clear: both;
+        display: block;
+        content: "";
+
+    }
+    
+    .sponzori__naslov{
+        width:45%; height:30%;
+        padding-bottom: 30px;
+    }
+
+    .sponzori__generalni--img{
+        max-width: 100%;
+        padding-bottom: 30px;
+    }
+    .galerija{
+        max-width: 100%;
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        padding-bottom:40px;
+    }
+    .galerija__iznad{
+        position: absolute;
+        z-index: 3;
+    }
+    .galerija__slike{
+        display:flex;
+        flex-direction: column;
+    }
+    .galerija__slike--gornje{
+        display: flex;
+        flex-direction: row;
+       
+
+    }
+    .galerija__slike--donje{
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin:-20px;
+
+     
+    }
+    .galerija__slike--gornje img{
+        height:  248px;
+       
+    }
+    .galerija__slike--donje img{
+        height:  372px;
+        
+    }
+    .galerija__slike img{
+        
+    }
+    .galerija__iznad--logo{
+        height: 650px;
+        margin-left: -60px;
+        margin-top:-15px;
+    }
+    .galerija__title {
+        color: white;
+        font-weight: 900;
+        font-size: 42px;
+        text-transform: uppercase;
+        top:250px;
+        left: 55px;
+        position: absolute;
+        z-index: 5;
+    }
+    .galerija__title--year{
+        color: #30cec2;
+        top:103px;
+        left: 0;
+      
+    }
+    .statistike{
+        display: flex;
+        justify-content: space-around;
+    }
+    .statistike h3{
+        
+        font-weight: 900;
+        font-size: 11.5vw;
+        color: #d8d8d8;
+    }
+    .statistike h4{
+        text-transform: uppercase;
+        margin-top: -10px;
+        color: #30cec2;
+        text-align: center;
+        font-weight: 900;
+        font-size: 40px;
+    }
+    .raspored__termini{
+      
+        padding-bottom: 70px;
+    }
+    
+ 
+}
+
+@media screen and (min-width: 820px){
+    .sponzori__generalni{
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 100%
+    }
+    .sponzori__generalni--img{
+        width:350px; 
+        
+        
+    }
+    .sponzori__naslov{
+        width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .sponzori__generalni--ljevi{
+        
+        padding-right: 100px;
+    }
+    .sponzori__generalni--desni{
+        text-align: left;
+        max-width: 390px;
+       
+    }
+    
+    .sponzori__generalni--h2{
+        display: flex;
+        flex-wrap: wrap;
+       
+        width: 300px;
+    }
+}
+@media screen and (min-width: 1050px){
+    .paddingLR20--30{/*LEFT RIGHT*/
+        padding: 0 30px;
+    }
+    .sponzori__naslov{
+        width: 430px;
+        
+    }
+    .sponzori__generalni--img{
+        width:450px; 
+      
+    }
+    .raspored__termin--logo{
+        position: absolute;
+         display: block;
+         height: 70px;
+         opacity: 0.6;
+         bottom: 22.5px;
+         right: 10px;
+     }
+   
 }
