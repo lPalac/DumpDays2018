@@ -69,7 +69,17 @@
 .img--shadow{
     filter: drop-shadow(1px 3px 12px rgba(0, 0, 0, .2));
 }
-
+@media screen and (min-width: 1024px){
+    .title{
+        font-size: 52px;
+    }
+    .highlighted-number{
+        font-size: 190px;
+    }
+    .text{
+        font-size: 20px;
+    }
+}
 @media screen and (min-width: 1440px){
     .photo__img--left{
         max-width: unset;

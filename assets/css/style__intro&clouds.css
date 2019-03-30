@@ -183,13 +183,16 @@
         margin-right: 0;
         width: 80%;
     }
-    .discussion{
-
-    }
     .content{
         display: flex;
         margin-top: -30%;
-        padding-top: 5%;
+        padding-bottom: 60px;
+        background-image: url(../Images/biggy.png);
+        background-size: cover;
+        padding-top: 160px;
+    }
+    .discussion{
+        background-color: white;
     }
     .discussion__wrapper{
         width: 65%;
@@ -203,16 +206,19 @@
         margin-top: 0;
     }  
     .top{
-        /*clip-path: polygon(0 0, 0% 100%, 50% 0);*/
         clip-path: none;
-        height: 463px;
-        background-image: url("../Images/biggy.png");
-        background-size: cover;
     }
     .workshop{
-        margin-bottom: -15%;
+        margin-bottom: -8%;
         position: relative;
         z-index: 2;
+    }
+    .intro--title h1{
+        font-size: 45px;
+    }
+    .intro--information{
+        font-size: 28px;
+        font-weight: 400;
     }
 }
 
@@ -238,7 +244,7 @@
         /*clip-path: polygon(0 0, 0% 100%, 40% 0);*/
     }
     .discussion__wrapper{
-        width: 30%;
+        width: 50%;
         padding-left: 5%;
     }
     .discussion__photo{
@@ -259,7 +265,7 @@
     }
     .workshop{
         padding-bottom: 10%;
-        margin-bottom: -20%;
+        margin-bottom: -10%;
     }
     .workshop__content{
         margin: 0;
@@ -274,6 +280,12 @@
     }
     .about--content{
         width: 55%;
+    }
+    .intro{
+        padding: 430px 50px;
+    }
+    .intro--title h1{
+        font-size: 65px;
     }
 }
 
@@ -322,10 +334,16 @@
         margin-right: 10%;
         margin-top: 10%;
     }
+    .intro {
+        padding: 430px 270px;
+    }
     .intro--title h1{
         font-size: 65px;
     }
     .intro--information{
         font-size: 28px;
+    }
+    .workshop {
+        margin-bottom: -30%;
     }
 }
