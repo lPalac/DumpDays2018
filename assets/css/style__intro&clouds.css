@@ -2,7 +2,7 @@
     width: 100%;
 }
 .intro{
-    background: url("./assets/Images/callback.jpg");
+    background: url("../Images/callback.jpg");
     padding: 300px 50px; 
     display: flex;
     flex-direction: column;
@@ -203,8 +203,11 @@
         margin-top: 0;
     }  
     .top{
-        clip-path: polygon(0 0, 0% 100%, 50% 0);
-        height: 300px;
+        /*clip-path: polygon(0 0, 0% 100%, 50% 0);*/
+        clip-path: none;
+        height: 463px;
+        background-image: url("../Images/biggy.png");
+        background-size: cover;
     }
     .workshop{
         margin-bottom: -15%;
@@ -232,7 +235,7 @@
         margin-right: 20%;
     }
     .top{
-        clip-path: polygon(0 0, 0% 100%, 40% 0);
+        /*clip-path: polygon(0 0, 0% 100%, 40% 0);*/
     }
     .discussion__wrapper{
         width: 30%;
