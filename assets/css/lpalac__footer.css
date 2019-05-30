@@ -56,6 +56,10 @@ position: relative;
     font-size: 11px;
     margin-top: 15px;
 }
+.footer img{
+    margin-bottom: -9px;
+    padding-right: 10px;
+}
 
 nav{
     padding: 0 40px;
@@ -103,11 +107,7 @@ nav img{
 }
 .pridruzi__registriraj--vrlik{
  max-width: 100%;
-   /*background-image: url("../Images/vr-guy.png") ;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    VATIT SE NA OVO!!!!
-    */
+
 }
 .pridruzi__registriraj--vrlik img{
     position: absolute;
@@ -254,10 +254,49 @@ width: 170px;
     margin: 0 auto;
 }
 .sponzori__generalni--img{
+    position: absolute;
+    left: 0;
     max-width: 100%;
     border-radius: 6px;
     padding-bottom: 20px;
+
+    border-radius: 6px;
+    transition: opacity 1s ease-in-out;
+    animation-name: cf4FadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
 }
+@keyframes cf4FadeInOut {
+    0% {
+      opacity:1;
+    }
+    17% {
+      opacity:1;
+    }
+    25% {
+      opacity:0;
+    }
+    92% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  .sponzori__generalni--img4 {
+    animation-delay: 6s;
+  }
+  .sponzori__generalni--img3 {
+    animation-delay: 4s;
+  }
+  .sponzori__generalni--img2 {
+    animation-delay: 2s;
+  }
+  .sponzori__generalni--img1 {
+    animation-delay: 0;
+  }
 .sponzori__generalni--h2{
     text-transform: uppercase;
     font-size: 42px;
@@ -273,19 +312,7 @@ width: 170px;
     display: block;
     
 }
-/*.bg-face {
-    width: 40px; 
-    height: 40px;
-    background: url("../css_sprites\ \(1\).png") -5560px -1242px ;   
-}
-.bg-yt {
-    width: 96px; height: 98px;
-    background: url("../css_sprites\ \(1\).png") -5560px -1478px;
-}
-.bg-insta {
-    width: 98px; height: 98px;
-    background: url("../css_sprites\ \(1\).png") -5560px -1360px;
-}*/
+
 .sponzori__naslov{
     width:70%; 
     padding-bottom: 30px;
@@ -425,7 +452,26 @@ align-content: center;
     padding-bottom: 10px;
     
     color: #30cec2;
+}
+/*ANIMACIJE */
 
+.sponzori__animacija img:hover{
+    transform: scale(1.1);
+    transition: transform .25s;
+}
+.sponzori__generalnii--img{
+    position: relative;
+    
+    max-width: 100%;
+    border-radius: 6px;
+    padding-bottom: 20px;
+
+    
+}
+
+@keyframes micanje{
+    from {left:0px;}
+    to{left:30px;}
 }
 @media screen and (min-width: 768px){
     .paddingLR20--30{/*LEFT RIGHT*/
