@@ -80,6 +80,16 @@
     to {color: #30cec2;}
 }
 
+.change-color-dark h1:hover{
+    animation-name: my-colors-dark;
+    animation-duration: .25s;
+}
+
+@keyframes my-colors-dark {
+    from {color: #193b44;}
+    to {color: #30cec2;}
+}
+
 .hide-and-show{
     animation-name: hide-show;
     animation-duration: 0.75s;

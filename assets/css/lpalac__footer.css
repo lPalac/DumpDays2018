@@ -38,6 +38,10 @@
 position: relative;
 }
 
+.raspored__termini h1:hover{
+    color: #30cec2;
+}
+
 .container{
    
    
