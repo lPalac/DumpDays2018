@@ -498,6 +498,10 @@ align-content: center;
         font-size: 14px;
     }
 
+    .raspored__termini h1:hover{
+        color: #30cec2;
+     }
+
     .pridruzi{
       
         flex-direction: row;

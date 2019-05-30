@@ -69,6 +69,57 @@
 .img--shadow{
     filter: drop-shadow(1px 3px 12px rgba(0, 0, 0, .2));
 }
+.change-color:hover{
+    animation-name: my-colors;
+    animation-duration: .5s;
+ }
+ 
+ @keyframes my-colors {
+    from {color: white;}
+    to {color: #30cec2;}
+ }
+ 
+ .change-color-dark h1:hover{
+    animation-name: my-colors-dark;
+    animation-duration: .25s;
+ }
+ 
+ @keyframes my-colors-dark {
+    from {color: #193b44;}
+    to {color: #30cec2;}
+ }
+ 
+ .hide-and-show{
+    animation-name: hide-show;
+    animation-duration: 0.75s;
+    animation-iteration-count: infinite;
+ }
+ 
+ @keyframes hide-show{
+    from{
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.5s linear;
+    }
+    to{
+        visibility: visible;
+        opacity: 1;
+    }
+ }
+ .footer img{
+    margin-bottom: -9px;
+    padding-right: 10px;
+ }
+ .footer__nav div:hover > .move-right{
+    position: relative;
+    animation-name: slide-right;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+ }
+ @keyframes slide-right {
+    from {left: 0px;}
+    to {left: 10px;}
+ }
 @media screen and (min-width: 1024px){
     .title{
         font-size: 52px;

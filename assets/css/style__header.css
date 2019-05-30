@@ -95,6 +95,10 @@
     display: flex;
     align-self: flex-end;
 }
+.nav__inner--menu a:hover {
+    color: #30cec2;
+    font-weight: 700;
+}
 
 @media screen and (min-width: 768px){
 
