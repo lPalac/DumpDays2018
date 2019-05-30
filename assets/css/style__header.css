@@ -79,6 +79,10 @@
     align-self: center;
     padding-top: 20%;
 }
+.nav__inner--menu a:hover {
+    color: #30cec2;
+    font-weight: 700;
+}
 .nav__inner--close img {
     margin-right: 20px;
     margin-top: 20px;
